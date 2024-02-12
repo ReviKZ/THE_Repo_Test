@@ -1,7 +1,5 @@
 
 Hello World!!
-<<<<<<< Updated upstream
-DAWED2004 Bence0725 ReviKZ mxhalyfalvx Kiki
-Csokacsalad
-=======
->>>>>>> Stashed changes
+DAWED2004 Bence0725 ReviKZ mxhalyfalvx Kiki Csokacsalad
+
+
