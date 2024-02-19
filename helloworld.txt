@@ -1,6 +1,13 @@
 
 Hello World!!
+<<<<<<< Updated upstream
 DAWED2004 Bence0725 ReviKZ mxhalyfalvx Kiki Csokacsalad RRichie
 Szivas van
 lapostetu
 testtest
+=======
+DAWED2004 Bence0725 ReviKZ mxhalyfalvx Bence1124
+Csokacsalad
+.....................
+Szabó Bence_VXHS14
+>>>>>>> Stashed changes
