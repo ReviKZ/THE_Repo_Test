@@ -1,0 +1,49 @@
+public class Cube {
+    public int x_coordinate;
+    // Instance variable to store the side length of the cube
+    private double sideLength;
+
+    // Constructor to initialize the cube with a given side length
+    public Cube(double sideLength) {
+        this.sideLength = sideLength;
+    }
+
+    // Method to calculate the volume of the cube
+    public double calculateVolume() {
+        return Math.pow(sideLength, 3);
+    }
+
+    // Method to calculate the surface area of the cube
+    public double calculateSurfaceArea() {
+        return 6 * Math.pow(sideLength, 2);
+    }
+
+    // Getter method to retrieve the side length of the cube
+    public double getSideLength() {
+        return sideLength;
+    }
+
+    // Setter method to set the side length of the cube
+    public void setSideLength(double sideLength) {
+        this.sideLength = sideLength;
+    }
+
+    // Main method for testing the Cube class
+    public static void main(String[] args) {
+        // Create an instance of the Cube class with side length 5.0
+        Cube myCube = new Cube(5.0);
+
+        // Display the initial side length, volume, and surface area
+        System.out.println("Initial side length: " + myCube.getSideLength());
+        System.out.println("Volume: " + myCube.calculateVolume());
+        System.out.println("Surface Area: " + myCube.calculateSurfaceArea());
+
+        // Set a new side length for the cube
+        myCube.setSideLength(7.0);
+
+        // Display the updated side length, volume, and surface area
+        System.out.println("\nUpdated side length: " + myCube.getSideLength());
+        System.out.println("Updated Volume: " + myCube.calculateVolume());
+        System.out.println("Updated Surface Area: " + myCube.calculateSurfaceArea());
+    }
+}
