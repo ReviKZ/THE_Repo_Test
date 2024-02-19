@@ -4,4 +4,8 @@ Hello World!!
 DAWED2004 Bence0725 ReviKZ mxhalyfalvx Kiki Csokacsalad
 =======
 Szivas van
+<<<<<<< HEAD
 >>>>>>> 7bf66245df9b5d8c7cc7290f444e0f1864d3b21e
+=======
+lapostetu
+>>>>>>> 3a5b2884e91aa7d6eb2bcb8c4161f551768a64af
