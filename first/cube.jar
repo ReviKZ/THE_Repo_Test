@@ -1,0 +1,42 @@
+public class Cube {
+
+    public int x_coordinate;
+
+    // Instance variable to store the side length of the cube
+    private double sideLength;
+
+    // Constructor to initialize the side length of the cube
+    public Cube(double sideLength) {
+        this.sideLength = sideLength;
+    }
+
+    // Method to calculate the volume of the cube
+    public double calculateVolume() {
+        return Math.pow(sideLength, 3);
+    }
+
+    // Getter method to retrieve the side length of the cube
+    public double getSideLength() {
+        return sideLength;
+    }
+
+    // Setter method to set the side length of the cube
+    public void setSideLength(double sideLength) {
+        this.sideLength = sideLength;
+    }
+
+    // Main method for testing the Cube class
+    public static void main(String[] args) {
+        // Creating an instance of the Cube class with a side length of 5.0
+        Cube myCube = new Cube(5.0);
+
+        // Calculating and printing the volume of the cube
+        System.out.println("Cube Volume: " + myCube.calculateVolume());
+
+        // Changing the side length of the cube
+        myCube.setSideLength(8.0);
+
+        // Calculating and printing the volume after changing the side length
+        System.out.println("Updated Cube Volume: " + myCube.calculateVolume());
+    }
+}
