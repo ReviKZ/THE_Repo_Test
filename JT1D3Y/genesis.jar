@@ -1,0 +1,43 @@
+public class Cube {
+    private int x_coordinate;
+
+    // Constructor
+    public Cube(double sideLength) {
+        this.sideLength = sideLength;
+    }
+
+    // Method to calculate the volume of the cube
+    public double calculateVolume() {
+        return Math.pow(sideLength, 3);
+    }
+
+    // Method to calculate the surface area of the cube
+    public double calculateSurfaceArea() {
+        return 6 * Math.pow(sideLength, 2);
+    }
+
+    // Getter method for side length
+    public double getSideLength() {
+        return sideLength;
+    }
+
+    // Setter method for side length
+    public void setSideLength(double sideLength) {
+        this.sideLength = sideLength;
+    }
+
+    // Main method for testing
+    public static void main(String[] args) {
+        // Create a cube object with side length 5
+        Cube cube = new Cube(5);
+
+        // Display volume and surface area
+        System.out.println("Cube Volume: " + cube.calculateVolume());
+        System.out.println("Cube Surface Area: " + cube.calculateSurfaceArea());
+
+        // Change side length to 7 and display updated volume and surface area
+        cube.setSideLength(7);
+        System.out.println("Updated Cube Volume: " + cube.calculateVolume());
+        System.out.println("Updated Cube Surface Area: " + cube.calculateSurfaceArea());
+    }
+}
