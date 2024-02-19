@@ -1,0 +1,30 @@
+public class Cube {
+    private double sideLength;
+
+    public Cube(double sideLength) {
+        this.sideLength = sideLength;
+    }
+
+    public double getSideLength() {
+        return sideLength;
+    }
+
+    public void setSideLength(double sideLength) {
+        this.sideLength = sideLength;
+    }
+
+    public double calculateVolume() {
+        return sideLength * sideLength * sideLength;
+    }
+
+    public double calculateSurfaceArea() {
+        return 6 * sideLength * sideLength;
+    }
+
+    public static void main(String[] args) {
+        Cube cube = new Cube(3.0);
+        System.out.println("A kocka oldalhossza: " + cube.getSideLength());
+        System.out.println("A kocka térfogata: " + cube.calculateVolume());
+        System.out.println("A kocka felszíne: " + cube.calculateSurfaceArea());
+    }
+}
